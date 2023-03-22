@@ -21,5 +21,9 @@ module.exports = {
     operatorsAliases: false,
   },
 
-  
+  production: {
+    use_env_variable: 'JAWSDB_URL',
+    dialect: 'mysql',
+    operatorsAliases: false,
+  },
 }
