@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Tonic</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tech Tonic</h1>
+    <nav>
+      <a href="/">Home</a>
+      {{#if loggedIn}}
+        <a href="/dashboard">Dashboard</a>
+        <a href="/logout">Logout</a>
+      {{else}}
+        <a href="/login">Login</a>
+        <a href="/signup">Sign Up</a>
+      {{/if}}
+    </nav>
+  </header>
+  
+  <main>
+    {{{body}}}
+  </main>
+  
+  <script src="/js/login.js" defer></script>
+  <script src="/js/signup.js" defer></script>
+  <script src="/js/dashboard.js" defer></script>
+  <script src="/js/comment.js" defer></script>
+</body>
+</html>
