@@ -1,0 +1,14 @@
+{{> header}}
+
+<main>
+  {{#each posts}}
+    <div class="post">
+      <h3>
+        <a href="/post/{{id}}">{{title}}</a>
+      </h3>
+      <p>Posted on {{createdAt}}</p>
+    </div>
+  {{/each}}
+</main>
+
+{{> footer}}
